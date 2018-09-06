@@ -232,5 +232,20 @@
     }
     google.maps.event.addDomListener(window, 'load', initialize_google_map);
   }
+  
+  /*-----------------
+  EVO Functions
+  -------------------*/
+	  $('.history').readmore({
+		  embedcss: false,
+		  speed: 1000	  
+	  });
+	 
+	  $(".fancyframe").fancybox({
+		toolbar  : true,
+		iframe : {
+			preload : false
+		}
+	});
 
 })(jQuery);

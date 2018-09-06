@@ -9,6 +9,7 @@
    CSS INDEX
   ===================
 
+  0. Fonts & EVO code.
   1. Theme Default CSS (body, link color, section etc)
   2. Header Area
    2.1 Stick menu Area
@@ -31,6 +32,34 @@
   17.Blog Details CSS
 
 -----------------------------------------------------------------------------------*/
+/*----------------------------------------*/
+/*  1.  Fonts
+/*----------------------------------------*/
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Orbitron Regular'), local('Orbitron-Regular'), url(https://fonts.gstatic.com/s/orbitron/v9/yMJRMIlzdpvBhQQL_Qq7dy0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 /*----------------------------------------*/
 /*  1.  Theme default CSS
@@ -69,6 +98,12 @@ a:focus {
   outline: 0px solid;
 }
 
+a[data-readmore-toggle] {
+   font-family: 'Orbitron', sans-serif;
+   color: #3ec1d5;
+   font-style: bolder;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -81,6 +116,7 @@ img {
 p {
   margin: 0 0 15px;
   color: #444;
+  font-family: 'lato', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -93,6 +129,12 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 48px;
   line-height: 50px;
+}
+
+.icon_text {
+	height: 1em;
+	display: inline;
+	vertical-align: middle;
 }
 
 h2 {
@@ -194,7 +236,7 @@ div#preloader {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 99999;
+  z-index: 999;
   width: 100%;
   height: 100%;
   overflow: visible;
@@ -380,7 +422,7 @@ div#preloader {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999999;
+  z-index: 999;
 }
 
 .stick .navbar-header a.navbar-brand {
@@ -405,9 +447,14 @@ div#preloader {
   line-height: 1;
 }
 
-.sticky-logo h1 span {
+.sticky-logo h1 span, h2 span, h3 span, h4 span {
   color: #3ec1d5;
 }
+
+.single-team-member {
+	cursor: pointer;
+}
+
 .stick .main-menu ul.navbar-nav li.active a::after {
   border: 1px solid #fff;
   bottom: 0px;
@@ -794,6 +841,10 @@ div#preloader {
 /*----------------------------------------
  8.Team Area Css
 ----------------------------------------*/
+
+#team .row {
+	padding-bottom: 25px;
+}
 
 .team-member {
   background: rgba(0, 0, 0, 0.65) none repeat scroll 0 0;
