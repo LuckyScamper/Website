@@ -1,0 +1,12 @@
+body {
+	background-color: #000;
+	overflow-y: hidden;
+}
+
+body > div {
+	padding: 25px;
+}
+
+h1, h2, h3, h4, p {
+	color: #FFF;
+}
