@@ -243,6 +243,8 @@
 	 
 	  $(".fancyframe").fancybox({
 		toolbar  : true,
+		'width': 900,
+        'height': 600,
 		iframe : {
 			preload : false
 		}
