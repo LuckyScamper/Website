@@ -22,7 +22,10 @@
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/venobox/venobox.css" rel="stylesheet">
   <!-- Add fancyBox -->
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css?v=2.1.7" type="text/css" media="screen" />
+  <link href="css/jquery.fancybox.min.css?v=2.1.7" rel="stylesheet" type="text/css" media="screen" />
+  
+  <!-- Discord -->
+  <link href="css/discordInvite.css" rel="stylesheet"/>
 
   <!-- Nivo Slider Theme -->
   <link href="css/nivo-slider-theme.css" rel="stylesheet">
@@ -782,14 +785,19 @@
           <!-- Start Discord -->
           <div class="col-md-6 col-sm-6 col-xs-12">
 			 <h4><span>D</span>iscord Channel</h4>
-             <iframe src="https://discordapp.com/widget?id=308621670891913246&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
-          </div>
+			 <div class="">
+				<div id="discordInviteBox"></div>
+				<iframe src="https://discordapp.com/widget?id=308621670891913246&theme=dark" width="400" height="500" allowtransparency="true" frameborder="0"></iframe>
+			 </div>
+		  </div>
           <!-- End Discord -->
 
           <!-- Start  YouTube -->
           <div class="col-md-6 col-sm-6 col-xs-12">
 			<h4><span>Y</span>ouTube Channel</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed//embed/videoseries?list=PLQF63NnUvPENokx510r3hSAIEgAzF3e0c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<div class="resp-container">
+				<iframe class="resp-iframe" src="https://www.youtube.com/embed//embed/videoseries?list=PLQF63NnUvPENokx510r3hSAIEgAzF3e0c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
 		  </div>
           <!-- End YouTube -->
         </div>
@@ -839,6 +847,14 @@
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/readmore.min.js"></script>
   <script src="js/jquery.fancybox.min.js?v=2.1.7"></script>
+  <script src="js/discordInvite.js"></script>
+  <script>
+	  discordInvite.init({
+	  inviteCode: 'EQ4z9TA',
+	  title: 'Evo Corporation',
+	});
+	discordInvite.render();
+  </script>
 
   <!-- Uncomment below if you want to use dynamic Google Maps -->
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script> -->
