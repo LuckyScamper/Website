@@ -75,6 +75,11 @@
 		font-size: 7vw;
 	}
 }
+
+.eventImage {
+	padding-bottom: 10px;
+}
+
 .resp-container {
 	max-width: 560px;
 	max-height: 315px;
