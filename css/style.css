@@ -1023,6 +1023,10 @@ div#preloader {
   opacity: 0;
 }
 
+.team-4>a::after {
+  background-image: url("../img/team/4o.png");
+}
+
 .team-6>a::after {
   background-image: url("../img/team/6o.png");
 }
