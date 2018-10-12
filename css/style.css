@@ -54,10 +54,9 @@
 }
 /* latin */
 @font-face {
-  font-family: 'Orbitron';
+  font-family: 'Tempest';
   font-style: normal;
-  font-weight: 400;
-  src: local('Orbitron Regular'), local('Orbitron-Regular'), url(https://fonts.gstatic.com/s/orbitron/v9/yMJRMIlzdpvBhQQL_Qq7dy0.woff2) format('woff2');
+  src: local('Regular'), local('Regular'), url('../img/tempestapache.ttf') format('truetype');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -135,7 +134,7 @@ a:focus {
 }
 
 a[data-readmore-toggle] {
-   font-family: 'Orbitron', sans-serif;
+   font-family: 'Tempest', sans-serif;
    color: #3ec1d5;
    font-style: bolder;
 }
@@ -156,7 +155,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Tempest', sans-serif;
   margin: 0 0 15px;
   color: #444;
   font-weight: 500;
@@ -1021,6 +1020,10 @@ div#preloader {
   transition: all 0.5s ease 0s;
   width: 100%;
   opacity: 0;
+}
+
+.team-3>a::after {
+  background-image: url("../img/team/3o.png");
 }
 
 .team-4>a::after {
