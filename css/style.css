@@ -1022,12 +1022,20 @@ div#preloader {
   opacity: 0;
 }
 
+.team-2>a::after {
+  background-image: url("../img/team/2o.png");
+}
+
 .team-3>a::after {
   background-image: url("../img/team/3o.png");
 }
 
 .team-4>a::after {
   background-image: url("../img/team/4o.png");
+}
+
+.team-5>a::after {
+  background-image: url("../img/team/5o.png");
 }
 
 .team-6>a::after {
@@ -1038,8 +1046,24 @@ div#preloader {
   background-image: url("../img/team/7o.png");
 }
 
+.team-8>a::after {
+  background-image: url("../img/team/8o.png");
+}
+
+.team-10>a::after {
+  background-image: url("../img/team/10o.png");
+}
+
 .team-11>a::after {
   background-image: url("../img/team/11o.png");
+}
+
+.team-12>a::after {
+  background-image: url("../img/team/12o.png");
+}
+
+.team-13>a::after {
+  background-image: url("../img/team/13o.png");
 }
 
 .team-social-icon {
