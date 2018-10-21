@@ -1066,6 +1066,15 @@ div#preloader {
   background-image: url("../img/team/13o.png");
 }
 
+.team-19>a::after {
+  background-image: url("../img/team/19o.png");
+}
+
+.team-20>a::after {
+  background-image: url("../img/team/20o.png");
+}
+
+
 .team-social-icon {
   left: 50%;
   margin-left: -61px;
