@@ -1022,6 +1022,10 @@ div#preloader {
   opacity: 0;
 }
 
+.team-1>a::after {
+  background-image: url("../img/team/1o.png");
+}
+
 .team-2>a::after {
   background-image: url("../img/team/2o.png");
 }
